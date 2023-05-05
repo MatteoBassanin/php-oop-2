@@ -43,7 +43,7 @@ $prodotti=[new Food(2,"croccantini",$species,1102),new Food(5,"umido",$species,2
             <?php 
             foreach($prodotti as $prodotto) {?>
             <div class="card" style="width: 18rem;">
-                <h3><?php $prodotto->_price ?></h3>
+                <h3><?php $prodotto->brand ?></h3>
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
