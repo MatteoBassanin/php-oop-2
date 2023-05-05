@@ -4,13 +4,15 @@
 
     public $price;
     public $brand;
+    public $species;
 
-
-    public function __construct($_price,$_brand){
+    public function __construct($_price,$_brand,array $_species){
 
      
         $this->price = $_price;
         $this->brand = $_brand;
+        $this->species = $_species;
+
 
     }
 
