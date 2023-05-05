@@ -6,8 +6,9 @@
     public $brand;
 
 
-    public function __construct(int $_price,string $_brand){
+    public function __construct(string $_name,int $_price,string $_brand){
 
+        $this->name = $_name;
         $this->price = $_price;
         $this->brand = $_brand;
 
