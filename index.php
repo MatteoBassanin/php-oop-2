@@ -17,7 +17,7 @@ $species = new Species("fish");
 // $cuccia = new Kennel(523,"papaerino",$species,"green","wood");
 
 
-$prodotti=[new Food("pluto",2,"croccantini",$species,1102),new Food("pippo",5,"umido",$species,234),new Kennel("gino",523,"cuccia",$species,"green","wood")];
+$prodotti=[new Food(2,"croccantini",$species,1102),new Food(5,"umido",$species,234),new Kennel(523,"cuccia",$species,"green","wood")];
 
 
 ?>
@@ -43,7 +43,7 @@ $prodotti=[new Food("pluto",2,"croccantini",$species,1102),new Food("pippo",5,"u
             <?php 
             foreach($prodotti as $prodotto) {?>
             <div class="card" style="width: 18rem;">
-                <h3><?php  ?></h3>
+                <h3><?php $prodotto->_price ?></h3>
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

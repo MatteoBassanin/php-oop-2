@@ -8,10 +8,10 @@ class Food extends Products{
     public $calories;
 
 
-    public function __construct($_name,$_price,$_brand, Species $_species,$_calories)
+    public function __construct($_price,$_brand, Species $_species,$_calories)
     {
 
-        parent::__construct($_name,$_price,$_brand);
+        parent::__construct($_price,$_brand);
         $this->species = $_species;
         $this->calories = $_calories;
 

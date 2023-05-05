@@ -6,10 +6,10 @@ class Kennel extends Products{
     public $color;
     public $material;
 
-    public function __construct($_name,$_price,$_brand, Species $_species,$_color,$_material)
+    public function __construct($_price,$_brand, Species $_species,$_color,$_material)
     {
 
-        parent::__construct($_name,$_price,$_brand);
+        parent::__construct($_price,$_brand);
         $this->species = $_species;
         $this->color = $_color;
         $this->material = $_material;
