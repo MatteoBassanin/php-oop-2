@@ -1,7 +1,7 @@
 <?php
 
 
-class Kennel extends Prodcuts{
+class Kennel extends Products{
 
     
 }

@@ -1,7 +1,12 @@
 <?php
 
 
-class Food extends Prodcuts{
 
-    
+class Food extends Products{
+
+    public $species;
+
+
+
+
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-class Games extends Prodcuts{
+class Games extends Products{
 
     
 }
