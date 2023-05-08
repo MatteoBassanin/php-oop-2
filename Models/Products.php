@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/Traits/Picturable.php';
+require_once __DIR__ . '/../Traits/Picturable.php';
 
 class Products
 {
