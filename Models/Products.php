@@ -1,29 +1,18 @@
 <?php
- 
- class Products{
+require_once __DIR__ . '/Traits/Picturable.php';
 
+class Products
+{
+    use Picturable;
     public $price;
     public $brand;
-    public $species;
 
-    public function __construct($_price,$_brand,array $_species){
 
-     
+    public function __construct($_price, $_brand)
+    {
+
+
         $this->price = $_price;
         $this->brand = $_brand;
-        $this->species = $_species;
-
-
     }
-
-    public function getInfo(){
-        return $this->name . "<br/>" . $this->price . "<br/>" . $this->brand;
-    }
-
-
-    
- }
-
-
-
- ?>
+}

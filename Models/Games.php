@@ -1,17 +1,18 @@
 <?php
 
 
-class Games extends Products{
+class Games extends Products
+{
 
+    public $species;
     public $model;
 
 
-    public function __construct($_price,$_brand,$_species,$_model)
+    public function __construct($_price, $_brand, Species $_species, $_model)
     {
 
-        parent::__construct($_price,$_brand,$_species);
+        parent::__construct($_price, $_brand);
         $this->species = $_species;
         $this->model = $_model;
-
     }
 }
