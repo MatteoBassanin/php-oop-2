@@ -19,9 +19,9 @@ $dog = new Species("dog");
 
 
 
-$prodotti = [new Food(2, "croccantini", "https://www.dreamstime.com/stock-photo-birman-cat-cute-brown-image97036622", $cat, 1102)];
+$prodotti = [new Food(2, "croccantini", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1FWeo7EbupPPZFoqvMe9O4KuX6m2OMeFQKSZRTriyOt0gyXtQ_94hyQ66d88gHEsm0Q&usqp=CAU", $cat, 1102)];
 
-// var_dump($prodotti)
+
 ?>
 
 
@@ -50,7 +50,7 @@ $prodotti = [new Food(2, "croccantini", "https://www.dreamstime.com/stock-photo-
                     <h3><?php echo $prodotto->brand;  ?></h3>
                     <div><?php echo $prodotto->price;  ?></div>
                     <div><?php echo $prodotto->species->kind;  ?></div>
-                    <img src="<?php echo $prodotto->picture ?>" class="card-img-top" alt="...">
+                    <img src="<?php echo $prodotto->picture; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
 
                     </div>
