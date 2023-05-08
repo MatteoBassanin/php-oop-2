@@ -6,22 +6,20 @@ require_once __DIR__ . '/Models/Games.php';
 require_once __DIR__ . '/Models/Species.php';
 require_once __DIR__ . '/Traits/Picturable.php';
 
-// $cibo = new Products(100,"peppe");
-
-$cat = new Species("cat");
-// $croccantini = new Food(2,"pippo",$species,1102);
-
-$dog = new Species("dog");
-// $umido = new Food(5,"pluto",$species,234);
-
-// $species = [new Species ("cat"),new Species("dog")];
-// $cuccia = new Kennel(523, "papaerino", $species, "green", "wood");
 
 
+$cat = new Species("cat", "fa-solid fa-cat");
+
+
+$dog = new Species("dog", "fa-solid fa-dog");
 
 $prodotti = [new Food(2, "croccantini", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1FWeo7EbupPPZFoqvMe9O4KuX6m2OMeFQKSZRTriyOt0gyXtQ_94hyQ66d88gHEsm0Q&usqp=CAU", $cat, 1102)];
 
-
+try {
+    echo $cat->kind = 7;
+} catch (Exception $e) {
+    echo "hai inserito un valore sbagliato";
+}
 ?>
 
 
@@ -33,6 +31,7 @@ $prodotti = [new Food(2, "croccantini", "https://encrypted-tbn0.gstatic.com/imag
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazing shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
@@ -49,13 +48,13 @@ $prodotti = [new Food(2, "croccantini", "https://encrypted-tbn0.gstatic.com/imag
                 <div class="card" style="width: 18rem;">
                     <h3><?php echo $prodotto->brand;  ?></h3>
                     <div><?php echo $prodotto->price;  ?></div>
-                    <div><?php echo $prodotto->species->kind;  ?></div>
+                    <i class="<?php echo $prodotto->species->icon; ?>"></i>
                     <img src="<?php echo $prodotto->picture; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-
                     </div>
                 </div>
             <?php } ?>
+            <div class="button"><a href="fodhodsuhfdsuogfdso">vai</a></div>
         </div>
 
 

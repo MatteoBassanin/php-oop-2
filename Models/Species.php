@@ -5,13 +5,15 @@ class Species
 {
 
     public $kind;
+    public $icon;
 
 
 
-    public function __construct(string $_kind)
+    public function __construct(string $_kind, string $_icon)
     {
 
         $this->kind = $_kind;
+        $this->icon = $_icon;
     }
 
 
