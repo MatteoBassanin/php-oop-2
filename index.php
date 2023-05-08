@@ -16,9 +16,9 @@ $dog = new Species("dog", "fa-solid fa-dog");
 $prodotti = [new Food(2, "croccantini", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1FWeo7EbupPPZFoqvMe9O4KuX6m2OMeFQKSZRTriyOt0gyXtQ_94hyQ66d88gHEsm0Q&usqp=CAU", $cat, 1102)];
 
 try {
-    echo $cat->kind = 7;
+    echo $dog->animalAge(2001);
 } catch (Exception $e) {
-    echo "hai inserito un valore sbagliato";
+    echo "Si è verificato un errore: " . $e->getMessage();
 }
 ?>
 
