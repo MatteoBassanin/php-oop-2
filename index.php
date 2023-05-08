@@ -18,7 +18,8 @@ $dog = new Species("dog");
 // $cuccia = new Kennel(523, "papaerino", $species, "green", "wood");
 
 
-$prodotti = [new Food(2, "croccantini", $cat, 1102, new Picturable("https://www.dreamstime.com/stock-photo-birman-cat-cute-brown-image97036622")), new Food(5, "umido", $dog, 234), new Kennel(523, "cuccia", $dog, "green", "wood"),];
+
+$prodotti = [new Food(2, "croccantini", "https://www.dreamstime.com/stock-photo-birman-cat-cute-brown-image97036622", $cat, 1102)];
 
 // var_dump($prodotti)
 ?>

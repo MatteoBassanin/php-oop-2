@@ -8,11 +8,12 @@ class Products
     public $brand;
 
 
-    public function __construct($_price, $_brand)
+    public function __construct($_price, $_brand, $picture)
     {
 
 
         $this->price = $_price;
         $this->brand = $_brand;
+        $this->picture = $picture;
     }
 }
